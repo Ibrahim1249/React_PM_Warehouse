@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter , sans-serif;
+}
+
+nav{
+  padding: 0.25rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #b0c4b1;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  
+}
+ul li{
+  margin: 0rem 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+.button {
+  display: inline-block;
+  padding: 6px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background-color: #3498db;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #2471a3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
+/* .button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+} */
+
+.button-green {
+  background-color: #2ecc71;
+}
+
+.button-green:hover {
+  background-color: #27ae60;
+}
+
+.button-red {
+  background-color: #e74c3c;
+}
+
+.button-red:hover {
+  background-color: #c0392b;
+}
+.bg-color{
+ /* border: 2px solid red; */
+ background-color: #0b2545;
+}
+.bg-color a{
+  color: #eef4ed;
+}
+.menu{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.logo{
+  width: 100px;
+}
+.logo img{
+  width: 100%;
+}
+
+/* search component css */
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.search-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  margin-left: 10px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+.filter-container{
+  display: flex;
+  padding: 1.5rem 4rem;
+  justify-content: space-between;
+}
+.filter-container .filter label{
+  padding-right: 0.5rem;
+}
+.filter-container .filter select{
+  padding: 0.25rem;
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.filter-card-container , .liked-card-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 6%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.error-card {
+   color: red;
+   text-align: center;
+   padding: 6% 0%;
+}
+.card{
+  width: 30%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+.card h2{
+  margin-bottom: 0.5rem;
+}
+.card .title{
+  display: flex;
+  justify-content: space-between;
+}
+.details{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.card-detail p{
+  margin-bottom: 0.25rem;
+}
+.card-detail .name{
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+
+.card-detail p span:first-of-type{
+  color: rgb(9, 9, 70);
+  font-weight: 500;
+}
+.card-detail p span:last-of-type{
+  color: rgb(150, 30, 21);
+}
