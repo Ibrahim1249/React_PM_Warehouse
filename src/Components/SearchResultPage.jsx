@@ -5,7 +5,7 @@ function SearchResultPage() {
   const { searchData } = useSelector((state) => {
     return state.homeReducer;
   });
-  console.log(searchData);
+
   return (
     <>
         {searchData.length > 0 ? (
