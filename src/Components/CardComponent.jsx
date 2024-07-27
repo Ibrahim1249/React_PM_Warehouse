@@ -4,7 +4,7 @@ import Card from './Card'
 import { useSelector } from 'react-redux'
 
 function CardComponent() {
-    const {originalData , likedData} = useSelector((state)=>{return state.homeReducer})
+    const {originalData } = useSelector((state)=>{return state.homeReducer})
   
   return (
    <>
